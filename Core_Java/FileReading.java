@@ -9,6 +9,8 @@ public class FileReading{
 
             BufferedReader b1 = new BufferedReader(f1);
 
+		int a = 10;
+
             // System.out.println(b1.read());
             // System.out.println(b1.read());
 
