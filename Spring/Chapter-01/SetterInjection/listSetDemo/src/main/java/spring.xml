@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="emp" class="com.learnJava.listSetDemo.Emp">
+	
+		<property name="name" value="jay"></property>
+		
+		<property name="phones">
+			<list>
+				<value>9973232303</value>
+				<value>9924422359</value>
+				<null></null>
+				
+			</list>
+		</property>
+		
+		
+		<property name="address">
+			<set>
+				<value>Delhi</value>
+				<value>Porbandar</value>
+				<value>Mumbai</value>
+				<value>Delhi</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+		
+			<map>
+			<entry key="Java" value="4 Months"></entry>
+			<entry key="C" value="1 Month"></entry>
+			<entry key="Node.JS" value="3 Months"></entry>
+			<entry key="Assembly" value="12 Months"></entry>
+			</map>
+		
+		</property>
+	
+	</bean>
+
+</beans>
