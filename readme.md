@@ -21,4 +21,4 @@ This repository is specially created for my **MSc-IT students** who are learning
 ## 🚀 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Advanced-Java-MScIT.git
+   git clone https://github.com/cyber-jaygoswami/Learn_java.git 
