@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- Reference Injection with Setter injection -->
+	<!-- 
+	<bean id="address" class="com.learnJava.AutoWireExample.Address">
+		<property name="city" value="Porbandar" />
+		<property name="state" value="Gujarat" />
+	</bean>
+	<bean id="emp1" class="com.learnJava.AutoWireExample.Emp">
+		<property name="name" value="jay" />
+		<property name="address">
+		
+			<ref bean="address"></ref>
+		</property>
+	</bean>
+	
+	-->
+	
+	<!-- Autowire : byName -->
+	<!-- 
+	<bean id="address" class="com.learnJava.AutoWireExample.Address">
+		<property name="city" value="Porbandar" />
+		<property name="state" value="Gujarat" />
+	</bean>
+	<bean id="emp1" class="com.learnJava.AutoWireExample.Emp" autowire="byName">
+		<property name="name" value="Jay"></property>
+	</bean>
+	-->
+
+	
+	<!-- Autowire : byType -->
+	<!-- 
+		<bean id="address1" class="com.learnJava.AutoWireExample.Address">
+		<property name="city" value="Porbandar" />
+		<property name="state" value="Gujarat" />
+	</bean>
+	<bean id="emp1" class="com.learnJava.AutoWireExample.Emp" autowire="byType">
+		<property name="name" value="Jay"></property>
+	</bean>
+	
+	-->
+	
+	
+	<!-- Autowire : constrcutor (byType)-->
+	<bean id="address1" class="com.learnJava.AutoWireExample.Address">
+		<property name="city" value="Porbandar" />
+		<property name="state" value="Gujarat" />
+	</bean>
+	<bean id="emp1" class="com.learnJava.AutoWireExample.Emp" autowire="constructor">
+		<property name="name" value="Jay"></property>
+	</bean>
+</beans>
