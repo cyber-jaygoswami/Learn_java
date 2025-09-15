@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.learnJava.inheritance1">
+    <class name="Employee" table="Employee_table" discriminator-value="Employee">
+        <id name="id" type="int" column="USER_ID">
+        </id>
+      	<discriminator type="string" column="Emp_type"></discriminator>
+      <property name="name" type="string" />
+      	
+      	
+      	<subclass name="Regular_Employee" discriminator-value="Regular_employee">
+      		<property name="salary" type="float" />
+      		<property name="bonus" type="int" />
+      		
+      	
+      	</subclass>
+      	
+      	<subclass name="Contract_Employee" discriminator-value="Contract_employee">
+      		<property name="pay_per_hour" type="float" />
+      		<property name="contract_period" type="string" />
+      		
+      	
+      	</subclass>
+    </class>
+</hibernate-mapping>
